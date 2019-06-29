@@ -5,10 +5,10 @@ Given a non-negative integer, 3 for example, return a string with a murmur:
 function countSheep(num){
   let arr = [];
   for(i = 1; i <= num; i++){
-    arr.push(i + ' sheep');
+    arr.push(i + ' sheep...');
   }
   arr = arr.toString();
-  arr = arr.replace(/,/g, '...');
+  arr = arr.replace(/,/g, '');
   return arr;
 }
-  const res = countSheep(3);
+  const res = countSheep(5);
