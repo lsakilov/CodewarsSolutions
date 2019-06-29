@@ -1,13 +1,14 @@
-https://www.codewars.com/kata/will-you-make-it/train/javascript
+https://www.codewars.com/kata/if-you-cant-sleep-just-count-sheep/train/javascript
+Given a non-negative integer, 3 for example, return a string with a murmur: 
+"1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
 
-Will you make it?
-You were camping with your friends far away from home, but when it's time to go back,
-you realize that you fuel is running out and the nearest pump is 50 miles away!
-You know that on average, your car runs on about 25 miles per gallon.
-There are 2 gallons left. Considering these factors, write a function that tells you
-if it is possible to get to the pump or not.
-Function should return true if it is possible and false if not.
-
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  return est = distanceToPump <= mpg * fuelLeft;
-};
+function countSheep(num){
+  let arr = [];
+  for(i = 1; i <= num; i++){
+    arr.push(i + ' sheep');
+  }
+  arr = arr.toString();
+  arr = arr.replace(/,/g, '...');
+  return arr;
+}
+  const res = countSheep(3);
