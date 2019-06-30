@@ -1,14 +1,19 @@
-https://www.codewars.com/kata/if-you-cant-sleep-just-count-sheep/train/javascript
-Given a non-negative integer, 3 for example, return a string with a murmur: 
-"1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+https://www.codewars.com/kata/thinkful-logic-drills-traffic-light/javascript
 
-function countSheep(num){
-  let arr = [];
-  for(i = 1; i <= num; i++){
-    arr.push(i + ' sheep...');
+You're writing code to control your town's traffic lights. 
+You need a function to handle each change from green, to yellow, to red, and then to green again.
+Complete the function that takes a string as an argument representing 
+the current state of the light and returns a string representing the state 
+the light should change to.
+
+For example, update_light('green') should return 'yellow'.
+
+function updateLight(current) {
+  if(current === "green") {
+    return "yellow";
+  } else if(current === "yellow") {
+      return "red";
+  } else if(current === "red") {
+      return "green";
   }
-  arr = arr.toString();
-  arr = arr.replace(/,/g, '');
-  return arr;
 }
-  const res = countSheep(5);
