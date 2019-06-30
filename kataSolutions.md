@@ -1,17 +1,7 @@
-https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
+https://www.codewars.com/kata/simple-multiplication/train/javascript
 
-All of the animals are having a feast! Each animal is bringing one dish. 
-There is just one rule: the dish must start and end with the same letters as the animal's name. 
-For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
 
-Write a function feast that takes the animal's name and dish as arguments 
-and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.
-
-Assume that beast and dish are always lowercase strings, and that each has at least two letters.
-beast and dish may contain hyphens and spaces, but these will not appear at the beginning or 
-end of the string. They will not contain numerals.
-
-function feast(beast, dish) {
-     return beast[0] !== dish[0] ? false : beast[beast.length - 1] === dish[dish.length - 1] ? true : false;
+function simpleMultiplication(number) {
+    return number = number % 2 ? number * 9 : number * 8;
 }
-const res = feast('caymar', 'cinnamonn');
