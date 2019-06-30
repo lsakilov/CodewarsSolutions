@@ -9,11 +9,5 @@ the light should change to.
 For example, update_light('green') should return 'yellow'.
 
 function updateLight(current) {
-  if(current === "green") {
-    return "yellow";
-  } else if(current === "yellow") {
-      return "red";
-  } else if(current === "red") {
-      return "green";
-  }
+        return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green';
 }
