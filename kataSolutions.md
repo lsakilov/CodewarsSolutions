@@ -1,7 +1,11 @@
-https://www.codewars.com/kata/simple-multiplication/train/javascript
+https://www.codewars.com/kata/reverse-list-order/train/javascript
 
-This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+In this kata you will create a function that takes in a list and returns a list with the reverse order.
 
-function simpleMultiplication(number) {
-    return number * (number % 2 ? 9 : 8);
+function reverseList(list) {
+    let arr = [];
+    for(let i = list.length - 1; i >= 0; i--){
+        arr.push(list[i]);
+    }
+    return arr;
 }
