@@ -1,41 +1,12 @@
-https://www.codewars.com/kata/switch-it-up/train/javascript
+https://www.codewars.com/kata/sleigh-authentication/train/javascript
 
-When provided with a number between 0-9, return it in words.
-Input :: 1
-Output :: "One".
-Try using "Switch" statements.
+Christmas is coming and many people dreamed of having a ride with Santa's sleigh. But, of course, only Santa himself is allowed to use this wonderful transportation. And in order to make sure, that only he can board the sleigh, there's an authentication mechanism.
 
-function switchItUp(number){
-  switch (number){
-    case 0:
-      return 'Zero';
-      break;
-    case 1:
-      return 'One';
-      break;
-    case 2:
-      return 'Two';
-      break;
-    case 3:
-      return 'Three';
-      break;
-    case 4:
-      return 'Four';
-      break;
-    case 5:
-      return 'Five';
-      break;
-    case 6:
-      return 'Six';
-      break;
-    case 7:
-      return 'Seven';
-      break;
-    case 8:
-      return 'Eight';
-      break;
-    case 9:
-      return 'Nine';
-      break;
-  }
-}
+Your task is to implement the authenticate() method of the sleigh, which takes the name of the person, who wants to board the sleigh and a secret password. If, and only if, the name equals "Santa Claus" and the password is "Ho Ho Ho!" (yes, even Santa has a secret password with uppercase and lowercase letters and special characters :D), the return value must be true. Otherwise it should return false.
+
+
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function(name, password) {
+  return res = name == 'Santa Claus' && password === 'Ho Ho Ho!' ? true : false;
+};
