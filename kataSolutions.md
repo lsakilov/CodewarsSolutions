@@ -8,5 +8,5 @@ Your task is to implement the authenticate() method of the sleigh, which takes t
 function Sleigh() {}
 
 Sleigh.prototype.authenticate = function(name, password) {
-  return res = name == 'Santa Claus' && password === 'Ho Ho Ho!' ? true : false;
+  return name == "Santa Claus" && password == "Ho Ho Ho!";
 };
