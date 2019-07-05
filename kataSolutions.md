@@ -1,18 +1,16 @@
-https://www.codewars.com/kata/simple-beads-count/train/javascript
+https://www.codewars.com/kata/reverse-a-number/train/javascript
 
-Two red beads are placed between every two blue beads. There are N blue beads. After looking at the arrangement below work out the number of red beads.
+Given a number, write a function to output its reverse digits. (e.g. given 123 the answer is 321)
 
-@ @@ @ @@ @ @@ @ @@ @ @@ @
+Numbers should preserve their sign; i.e. a negative number should still be negative when reversed.
 
-Implement count_red_beads(n) (in PHP count_red_beads($n); in Java, Javascript, TypeScript, C, C++ countRedBeads(n)) so that it returns the number of red beads.
-If there are less than 2 blue beads return 0.
-
-
-function countRedBeads(n) {
-  let bBeads = n;
-  let rBeads = (bBeads - 1) * 2;
-    if(n < 2) {
-      return 0;
-    }
-    return rBeads;
+function reverseNumber(n) {
+  if (n >= 0){
+    let arr = n.toString().split('').reverse();
+    return +(arr.join(''));
+  } else {
+    n = n * (-1);
+    let arr = n.toString().split('').reverse();
+    return (-1) * (+(arr.join('')));
+  }
 }
