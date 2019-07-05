@@ -1,17 +1,28 @@
-https://www.codewars.com/kata/numerical-palindrome-number-1/train/javascript
+https://www.codewars.com/kata/find-the-calculation-type/train/javascript
+You have to create a function which receives 3 arguments: 2 numbers, and the result of an unknown operation performed on them (also a number).
 
-A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward. Examples of numerical palindromes are:
+Based on those 3 values you have to return a string, that describes which operation was used to get the given result.
 
-2332 
-110011 
-54322345
+The possible return strings are: "addition", "subtraction", "multiplication", "division".
 
-For a given number num, write a function to test if it's a numerical palindrome or not and return a boolean (true if it is and false if not). Return "Not valid" if the input is not an integer or less than 0.
+Example:
+calcType(1, 2, 3) -->   1 ? 2 = 3   --> "addition"
+Notes
+In case of division you should expect that the result of the operation is obtained by using / operator on the input values - no manual data type conversion or rounding should be performed.
+Cases with just one possible answers are generated.
+Only valid arguments will be passed to the function.
 
-function palindrome(num) { 
-if(typeof num !== 'number' || num < 0){
-  return 'Not valid';
+function calcType(a, b, res) {
+  if(a + b === res){
+    return 'addition';
+  }
+  if(a - b === res){
+    return 'subtraction';
+  }
+  if(a * b === res){
+  return 'multiplication';
+  }
+  if(a / b === res){
+  return 'division';
+  }
 }
-  const arr = +(num.toString().split('').reverse().join(''));
-  return arr === num;  
-} 
