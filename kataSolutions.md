@@ -1,20 +1,18 @@
-https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
-Given an array of integers your solution should find the smallest integer.
+https://www.codewars.com/kata/get-the-mean-of-an-array/train/javascript
+It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
 
-For example:
+Return the average of the given array rounded down to its nearest integer.
 
-Given [34, 15, 88, 2] your solution will return 2
-Given [34, -345, -1, 100] your solution will return -345
-You can assume, for the purpose of this kata, that the supplied array will not be empty.
+The array will never be empty.
 
-class SmallestIntegerFinder {
-  findSmallestInt(args) {
-    let currentMin = args[0];
-    for(let i = 0; i < args.length; i++){
-      if(args[i] < currentMin){
-        currentMin = args[i];
-      }
-    }
-    return currentMin;
-  }
+function getAverage(marks){
+  return Math.floor(marks.reduce((acc, cur) => acc + cur) / marks.length);
+}
+
+===========================
+
+function getAverage(marks){
+  let acc = 0;
+  marks.forEach(el => acc += el);
+  return Math.floor(acc / marks.length);
 }
