@@ -5,14 +5,5 @@ Define a function that removes duplicates from an array of numbers and returns i
 The order of the sequence has to stay the same.
 
 function distinct(a) {
-  const items = {};
-  const res = [];
-  
-  for(let i =0; i < a.length; i++){
-    if(!items[a[i]]){
-      res.push(a[i]);
-      items[a[i]] = true;
-    }
-  }
-  return res;
+  return [...new Set(a)];
 }
