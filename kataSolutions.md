@@ -1,14 +1,23 @@
-https://www.codewars.com/kata/valid-parentheses/train/javascript
-Write a function called that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+https://www.codewars.com/kata/print-a-rectangle-using-asterisks/train/javascript
+Write a method that, given two arguments, width and height, returns a string representing a rectangle with those dimensions.
 
-function validParentheses(str){
-  const arr = str.split('');
-  let a = 0;
-  for(let i  = 0; i < arr.length; i++){
-    if(arr[i] === '(') a += 1;
-    else if (arr[i] === ')') a -= 1;
-    if(a < 0 ) return false;
-  }
-  if(a === 0) return true;
-  else return false;
+The rectangle should be filled with spaces, and its borders should be composed of asterisks (*).
+
+For example, the following call:
+
+getRectangleString(3, 3);
+Should return the following string:
+
+***
+* *
+***
+End each line of the string (including the last one) with a carriage return-line feed combination.
+
+Note: You may assume that width and height will always be greater than zero.
+
+function getRectangleString(w, h) {
+  const rn = '\r\n';
+  const tb = '*'.repeat(w) + rn;
+  const center = (w > 1) ? ('*' + ' '.repeat(w - 2) + '*' + rn).repeat(h - 2) : ''; 
+  return h > 1 ? (tb + center + tb) : tb.repeat(h);
 }
