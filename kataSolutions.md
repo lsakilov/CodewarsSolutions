@@ -1,22 +1,8 @@
-https://www.codewars.com/kata/alphabet-symmetry/train/javascript
+https://www.codewars.com/kata/remove-string-spaces/train/javascript
 
-Consider the word "abode". We can see that the letter a is in position 1 and b is in position 2. In the alphabet, a and b are also in positions 1 and 2. Notice also that d and e in abode occupy the positions they would occupy in the alphabet, which are positions 4 and 5.
+Simple, remove the spaces from the string, then return the resultant string.
 
-Given an array of words, return an array of the number of letters that occupy their positions in the alphabet for each word. For example, solve(["abode","ABc","xyzD"]) = [4,3,1]. See test cases for more examples.
-
-Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
-
-unction solve(arr){
-  let alp = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let arrN = [];
-  for(let i = 0; i < arr.length; i++){
-    let count = 0;
-    for(let j = 0; j < arr[i].length; j++){
-      if( j === alp.indexOf(arr[i][j].toUpperCase()) ){
-        count++;
-      }
-    }
-  arrN.push(count);
-  }
-  return arrN;
-};
+function noSpace(x){
+  let str = x.replace(/ /g, '');
+  return str
+}
