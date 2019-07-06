@@ -1,8 +1,7 @@
-https://www.codewars.com/kata/returning-strings/train/javascript
-Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+https://www.codewars.com/kata/string-ends-with/train/javascript
 
-*[Make sure you type the exact thing I wrote or the program may not execute properly]*
+Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
-function greet(name){
-  return `Hello, ${name} how are you doing today?`
+function solution(str, ending){
+  return (str.slice(str.length - ending.length) === ending);
 }
