@@ -1,16 +1,16 @@
-https://www.codewars.com/kata/arrays-similar/train/javascript
+https://www.codewars.com/kata/sum-all-the-arrays/train/javascript
+You are given an array of values.
 
-Write a function that determines whether the passed in arrays are similar. Similar means they contain the same elements, and the same number of occurrences of elements.
+Sum every number value in the array, and any nested arrays (to any depth).
 
-var arr1 = [1, 2, 2, 3, 4],
-    arr2 = [2, 1, 2, 4, 3],
-    arr3 = [1, 2, 3, 4],
-    arr4 = [1, 2, 3, "4"]
+Ignore all other types of values.
 
-arraysSimilar(arr1, arr2); // Should equal true
-arraysSimilar(arr2, arr3); // Should equal false
-arraysSimilar(arr3, arr4); // Should equal false
-
-function arraysSimilar(arr1, arr2) {
-  return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
+function arraySum(arr) {
+  const b = arr.toString().split(',');
+  let sum = 0;
+  
+  for(let i = 0; i < b.length; i++){
+    sum += Number.isNaN(Number(b[i])) ? 0 : Number(b[i]);
+  }
+  return sum;
 }
