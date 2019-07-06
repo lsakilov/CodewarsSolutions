@@ -1,7 +1,17 @@
-https://www.codewars.com/kata/string-ends-with/train/javascript
+https://www.codewars.com/kata/spongebob-meme/train/javascript
+Remember the spongebob meme that is meant to make fun of people by repeating what they say in a mocking way?
 
-Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
-function solution(str, ending){
-  return (str.slice(str.length - ending.length) === ending);
+You need to create a function that converts the input into this format, with the output being the same string expect there is a pattern of uppercase and lowercase letters.
+
+function spongeMeme(s) {
+  let str = '';
+  for(let i = 0; i < s.length; i++){
+    if(i % 2 == 0){
+      str += s[i].toUpperCase();
+    } else {
+      str += s[i].toLowerCase();
+    }
+  }
+  return str;
 }
