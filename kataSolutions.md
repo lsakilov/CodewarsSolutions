@@ -1,10 +1,11 @@
-https://www.codewars.com/kata/grasshopper-summation/train/javascript
-Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+https://www.codewars.com/kata/reversed-strings/train/javascript
+Complete the solution so that it reverses the string value passed into it.
 
-var summation = function (num) {
-  let res = 0;
-  for(i = 0; i <= num; i++){
-    res += i;
+
+function solution(str){
+  let letter = '';
+  for(let i = str.length-1; i >= 0; i--){
+    letter += str[i];
   }
-  return res;
+  return letter;
 }
