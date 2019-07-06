@@ -1,21 +1,22 @@
-https://www.codewars.com/kata/random-case/train/javascript
-Write a function that will randomly upper and lower characters in a string - randomCase() (random_case() for Python).
+https://www.codewars.com/kata/alphabet-symmetry/train/javascript
 
-A few examples:
+Consider the word "abode". We can see that the letter a is in position 1 and b is in position 2. In the alphabet, a and b are also in positions 1 and 2. Notice also that d and e in abode occupy the positions they would occupy in the alphabet, which are positions 4 and 5.
 
-randomCase("Lorem ipsum dolor sit amet, consectetur adipiscing elit") == "lOReM ipSum DOloR SiT AmeT, cOnsEcTEtuR aDiPiSciNG eLIt"
+Given an array of words, return an array of the number of letters that occupy their positions in the alphabet for each word. For example, solve(["abode","ABc","xyzD"]) = [4,3,1]. See test cases for more examples.
 
-randomCase("Donec eleifend cursus lobortis") == "DONeC ElEifEnD CuRsuS LoBoRTIs"
-Note: this function will work within the basic ASCII character set to make this kata easier - so no need to make the function multibyte safe.
+Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
 
-function randomCase(x) {
-let xNew = '';
-    for(i = 0; i < x.length; i++){
-    if(Math.round(Math.random()) > 0){
-      xNew += x[i].toUpperCase();
-    } else {
-      xNew += x[i].toLowerCase();
+unction solve(arr){
+  let alp = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let arrN = [];
+  for(let i = 0; i < arr.length; i++){
+    let count = 0;
+    for(let j = 0; j < arr[i].length; j++){
+      if( j === alp.indexOf(arr[i][j].toUpperCase()) ){
+        count++;
+      }
     }
+  arrN.push(count);
   }
-  return xNew;
-}
+  return arrN;
+};
