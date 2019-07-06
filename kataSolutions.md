@@ -1,10 +1,20 @@
-https://www.codewars.com/kata/write-shortest-function-to-calculate-average-number-of-array/train/javascript
-Given an array of integers, calculate the Average of these numbers.
+https://www.codewars.com/kata/valid-parentheses/train/javascript
+Write a function called that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
 
-Main challenge is to write shortest and compact function for it.
-
-For example: var a = [0, 1, 2]; 
-avg(a) // output should be 1
-Output of function will be also checked in tests, however most important is to write the shortest possible function as test will check length of written function. Input will always be valid.
-
-const avg = a => a.reduce((a,b)=>a+b) / a.length;
+function validParentheses(str){
+  const stack = [], open = ['(', '{', '['], close = [')', '}', ']'];
+  
+  for(let i = 0; i < str.length; i++){
+    if(open.includes(str[i])){
+      stack.push(str[i]);
+    } else {
+      if(close.indexOf(str[i]) === open.indexOf(stack[stack.length - 1])){
+        stack.pop(); 
+      } else {
+        return false;
+      }
+    }
+  }
+  return stack.length === 0;
+  console.log(stack);
+}
