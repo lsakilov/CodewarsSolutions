@@ -9,5 +9,5 @@ If bonus is true, the salary should be multiplied by 10. If bonus is false, the 
 Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS and Java) or "$" (C#, C++, Ruby, Clojure, Elixir, PHP and Python, Haskell).
 
 function bonusTime(salary, bonus) {
-  return bonus ? '£' + salary * 10 : '£' + salary;
+  return bonus ? `£${salary * 10}` : `£${salary}`;
 }
