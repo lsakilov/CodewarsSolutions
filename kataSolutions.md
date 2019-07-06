@@ -1,17 +1,16 @@
-https://www.codewars.com/kata/spongebob-meme/train/javascript
-Remember the spongebob meme that is meant to make fun of people by repeating what they say in a mocking way?
+https://www.codewars.com/kata/arrays-similar/train/javascript
 
+Write a function that determines whether the passed in arrays are similar. Similar means they contain the same elements, and the same number of occurrences of elements.
 
-You need to create a function that converts the input into this format, with the output being the same string expect there is a pattern of uppercase and lowercase letters.
+var arr1 = [1, 2, 2, 3, 4],
+    arr2 = [2, 1, 2, 4, 3],
+    arr3 = [1, 2, 3, 4],
+    arr4 = [1, 2, 3, "4"]
 
-function spongeMeme(s) {
-  let str = '';
-  for(let i = 0; i < s.length; i++){
-    if(i % 2 == 0){
-      str += s[i].toUpperCase();
-    } else {
-      str += s[i].toLowerCase();
-    }
-  }
-  return str;
+arraysSimilar(arr1, arr2); // Should equal true
+arraysSimilar(arr2, arr3); // Should equal false
+arraysSimilar(arr3, arr4); // Should equal false
+
+function arraysSimilar(arr1, arr2) {
+  return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
 }
