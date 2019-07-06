@@ -1,9 +1,12 @@
-https://www.codewars.com/kata/remove-duplicates-from-list/train/javascript
+https://www.codewars.com/kata/write-shortest-function-to-calculate-average-number-of-array/train/javascript
+Given an array of integers, calculate the Average of these numbers.
 
-Define a function that removes duplicates from an array of numbers and returns it as a result.
+Main challenge is to write shortest and compact function for it.
 
-The order of the sequence has to stay the same.
+For example: var a = [0, 1, 2]; 
+avg(a) // output should be 1
+Output of function will be also checked in tests, however most important is to write the shortest possible function as test will check length of written function. Input will always be valid.
 
-function distinct(a) {
-  return [...new Set(a)];
+function avg(a){
+  return a.reduce((a,b)=>a+b) / a.length;
 }
