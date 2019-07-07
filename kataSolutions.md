@@ -1,12 +1,13 @@
-https://www.codewars.com/kata/get-character-from-ascii-value/train/javascript
+https://www.codewars.com/kata/l1-set-alarm/train/javascript
+Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
 
-Write a function which takes a number and returns the corresponding ASCII char for that value.
+The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
 
-Example:
+setAlarm(true, true) -> false
+setAlarm(false, true) -> false
+setAlarm(false, false) -> false
+setAlarm(true, false) -> true
 
-get_char(65) # => 'A'
-For ASCII table, you can refer to http://www.asciitable.com/
-
-function getChar(c){
-  return String.fromCharCode(c);
+function setAlarm(employed, vacation){
+  return employed === true && vacation !== true ? true : false;
 }
