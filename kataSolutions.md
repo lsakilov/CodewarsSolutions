@@ -1,8 +1,16 @@
-https://www.codewars.com/kata/convert-a-string-to-a-number/train/javascript
-We need a function that can transform a string into a number. What ways of achieving this do you know?
+https://www.codewars.com/kata/how-good-are-you-really/train/javascript
+There was a test in your class and you passed it. Congratulations!
+But you're an ambitious person. You want to know if you're better than the average student in your class.
+You got an array with your colleges' points. Now calculate the average to your points!
 
-Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+Return True if you're better, else False!
 
-var stringToNumber = function(str){
-  return parseInt(str, 10);
+Note:
+Your points are not included in the array of your classes points. For calculating the average point you may add your point to the given array!
+
+
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = classPoints.reduce((acc, cur) => acc + cur)
+  let avg = sum / classPoints.length;
+  return avg > yourPoints ? false : true;
 }
