@@ -1,8 +1,18 @@
-https://www.codewars.com/kata/beginner-reduce-but-grow/train/javascript
-Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+https://www.codewars.com/kata/keep-hydrated-1/train/javascript
+Nathan loves cycling.
 
-[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
 
-function grow(x){
-  return x.reduce((a, b) => a * b);
+You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+For example:
+
+time = 3 ----> litres = 1
+
+time = 6.7---> litres = 3
+
+time = 11.8--> litres = 5
+
+function litres(time) {
+  return Math.floor(time / 2);
 }
