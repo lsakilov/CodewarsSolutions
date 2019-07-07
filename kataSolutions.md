@@ -1,11 +1,18 @@
-https://www.codewars.com/kata/third-angle-of-a-triangle/train/javascript
-You are given two angles (in degrees) of a triangle.
+https://www.codewars.com/kata/sum-of-positive/train/javascript
+You get an array of numbers, return the sum of all of the positives ones.
 
-Write a function to return the 3rd.
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
 
-Note: only positive integers will be tested.
+Note: if there is nothing to sum, the sum is default to 0.
 
-function otherAngle(a, b) {
-  let c;
-  return c = 180 - (a + b);
+function positiveSum(arr) {
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 0){
+      sum += arr[i];
+    } else {
+      arr.splice(i, 0);
+      }
+  }
+  return sum;
 }
