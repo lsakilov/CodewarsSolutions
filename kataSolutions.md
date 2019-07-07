@@ -1,16 +1,13 @@
-https://www.codewars.com/kata/how-good-are-you-really/train/javascript
-There was a test in your class and you passed it. Congratulations!
-But you're an ambitious person. You want to know if you're better than the average student in your class.
-You got an array with your colleges' points. Now calculate the average to your points!
+https://www.codewars.com/kata/convert-a-boolean-to-a-string/train/javascript
 
-Return True if you're better, else False!
+A function is a block of code that takes an input and produces an output. In this example, boolean_to_string is a function whose input is either true or false, and whose output is the string representation of the input, either "true"/"True" or "false"/"False" (check the sample tests about what capitalization to use in a given language).
 
-Note:
-Your points are not included in the array of your classes points. For calculating the average point you may add your point to the given array!
+A common idea we often want to represent in code is the concept of true and false. A variable that can either be true or false is called a boolean variable. In this example, the input to boolean_to_string (represented by the variable b) is a boolean.
 
+Lastly, when we want to take one action if a boolean is true, and another if it is false, we use an if-statement.
 
-function betterThanAverage(classPoints, yourPoints) {
-  let sum = classPoints.reduce((acc, cur) => acc + cur)
-  let avg = sum / classPoints.length;
-  return avg > yourPoints ? false : true;
+For this kata, don't worry about edge cases like where unexpected input is passed to the function. You'll get to worry about these enough in later exercises.
+
+function booleanToString(b){
+  return b.toString();
 }
