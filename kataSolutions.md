@@ -1,6 +1,8 @@
-https://www.codewars.com/kata/convert-to-binary/train/javascript
-Given a non-negative integer n, write a function toBinary/ToBinary which returns that number in a binary format.
+https://www.codewars.com/kata/convert-a-string-to-a-number/train/javascript
+We need a function that can transform a string into a number. What ways of achieving this do you know?
 
-function toBinary(n){
-  return +n.toString(2);
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+var stringToNumber = function(str){
+  return parseInt(str, 10);
 }
