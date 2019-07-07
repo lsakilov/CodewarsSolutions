@@ -1,13 +1,6 @@
-https://www.codewars.com/kata/reversed-sequence/train/javascript
-Get the number n (n>0) to return the reversed sequence from n to 1.
+https://www.codewars.com/kata/convert-to-binary/train/javascript
+Given a non-negative integer n, write a function toBinary/ToBinary which returns that number in a binary format.
 
-Example : n=5 >> [5,4,3,2,1]
-
-
-const reverseSeq = n => {
-  let arr = [];
-  for(i = n; i >= 1; i--){
-    arr.push(i)
-  }
-  return arr;
-};
+function toBinary(n){
+  return +n.toString(2);
+}
