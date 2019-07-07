@@ -1,18 +1,13 @@
-https://www.codewars.com/kata/sum-of-positive/train/javascript
-You get an array of numbers, return the sum of all of the positives ones.
+https://www.codewars.com/kata/square-n-sum/train/javascript
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-Example [1,-4,7,12] => 1 + 7 + 12 = 20
+For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
-Note: if there is nothing to sum, the sum is default to 0.
-
-function positiveSum(arr) {
+function squareSum(n){
   let sum = 0;
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] > 0){
-      sum += arr[i];
-    } else {
-      arr.splice(i, 0);
-      }
+  for(i = 0; i < n.length; i++){
+    sum += (n[i] * n[i]);
+    console.log(sum)
   }
   return sum;
 }
