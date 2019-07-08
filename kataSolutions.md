@@ -1,18 +1,24 @@
-https://www.codewars.com/kata/keep-hydrated-1/train/javascript
-Nathan loves cycling.
+https://www.codewars.com/kata/all-star-code-challenge-number-18/train/javascript
+This Kata is intended as a small challenge for my students
 
-Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+All Star Code Challenge #18
 
-You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+Create a function called that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one.
 
-For example:
+If no occurrences can be found, a count of 0 should be returned.
 
-time = 3 ----> litres = 1
+strCount('Hello', 'o') // => 1
+strCount('Hello', 'l') // => 2
+strCount('', 'z')      // => 0
+Notes:
 
-time = 6.7---> litres = 3
+The first argument can be an empty string
+The second string argument will always be of length 1
 
-time = 11.8--> litres = 5
-
-function litres(time) {
-  return Math.floor(time / 2);
+function strCount(str, letter){
+  let c = 0;
+  for(let i =0; i < str.length; i++){
+    str[i] === letter ? c++ : c + 0;
+  }
+  return c;
 }
