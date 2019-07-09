@@ -1,18 +1,11 @@
-https://www.codewars.com/kata/find-out-whether-the-shape-is-a-cube/train/javascript
-o find the volume (centimeters cubed) of a cuboid you use the formula:
+https://www.codewars.com/kata/bin-to-decimal/train/javascript
+Complete the function which converts a binary number (given as a string) to a decimal number.
 
-volume = Length * Width * Height
-
-But someone forgot to use proper record keeping, so we only have the volume, and the length of a single side!
-
-It's up to you to find out whether the cuboid has equal sides (= is a cube).
-
-Return true if the cuboid could have equal sides, return false otherwise.
-
-Return false for invalid numbers too (e.g volume or side is less than or equal to 0).
-
-Note: the sides must be integers
-
-var cubeChecker = function(volume, side){
-  return volume !== side * side  * side ? false : side > 0 ? true: false;
-};
+function binToDec(bin){
+  let a = parseInt(bin, 2).toString(10);
+  return parseInt(a, 10);
+}
+===========================
+function binToDec(bin){
+  return parseInt(bin, 2);
+}
