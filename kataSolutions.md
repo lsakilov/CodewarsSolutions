@@ -1,14 +1,18 @@
-https://www.codewars.com/kata/filter-coffee/train/javascript
-You love coffee and want to know what beans you can afford to buy it.
+https://www.codewars.com/kata/string-average/train/javascript
+You are given a string of numbers between 0-9. Find the average of these numbers and return it as a floored whole number (ie: no decimal places) written out as a string. Eg:
 
-The first argument to your search function will be a number which represents your budget.
+"zero nine five two" -> "four"
 
-The second argument will be an array of coffee bean prices.
+If the string is empty or includes a number greater than 9, return "n/a"
 
-Your 'search' function should return the stores that sell coffee within your budget.
-
-The search function should return a string of prices for the coffees beans you can afford. The prices in this string are to be sorted in ascending order.
-
-function search(budget, prices) {
-  return prices.filter((el) => el <= budget).sort((a,b) => a-b).join();
+function averageString(str) {
+  let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+  let arrStr = str.split(' ');
+  let sum = 0;
+    for(let i = 0; i < arrStr.length; i++){
+      sum += arr.indexOf(arrStr[i]);
+      if(arrStr[i] === '' || arr.includes(arrStr[i]) === false) return 'n/a'
+    }
+    let avg = Math.floor(sum/arrStr.length);
+    return arr[avg];
 }
