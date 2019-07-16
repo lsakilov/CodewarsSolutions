@@ -1,12 +1,14 @@
-https://www.codewars.com/kata/numerical-palindrome-number-5-1/train/javascript
+https://www.codewars.com/kata/fake-binary/train/javascript
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 
-A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward. Examples of numerical palindromes are:
-
-2332 
-110011 
-54322345
-
-For a given number num, write a function to test if the number can be rearranged to form a numerical palindrome or not and return a boolean (true if it can and false if it cannot). For this kata, single digit numbers will NOT be considered numerical palindromes.
-
-Return "Not valid" if the input is not an integer or is less than 0.
-
+function fakeBin(x){
+  let newStr = '';
+  for(let i = 0; i < x.length; i++){
+    if(x[i] < 5){
+      newStr += '0';
+    } else {
+      newStr += '1';
+    }
+  }
+  return newStr;
+}
