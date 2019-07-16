@@ -1,18 +1,12 @@
-https://www.codewars.com/kata/string-average/train/javascript
-You are given a string of numbers between 0-9. Find the average of these numbers and return it as a floored whole number (ie: no decimal places) written out as a string. Eg:
+https://www.codewars.com/kata/numerical-palindrome-number-5-1/train/javascript
 
-"zero nine five two" -> "four"
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward. Examples of numerical palindromes are:
 
-If the string is empty or includes a number greater than 9, return "n/a"
+2332 
+110011 
+54322345
 
-function averageString(str) {
-  let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-  let arrStr = str.split(' ');
-  let sum = 0;
-    for(let i = 0; i < arrStr.length; i++){
-      sum += arr.indexOf(arrStr[i]);
-      if(arrStr[i] === '' || arr.includes(arrStr[i]) === false) return 'n/a'
-    }
-    let avg = Math.floor(sum/arrStr.length);
-    return arr[avg];
-}
+For a given number num, write a function to test if the number can be rearranged to form a numerical palindrome or not and return a boolean (true if it can and false if it cannot). For this kata, single digit numbers will NOT be considered numerical palindromes.
+
+Return "Not valid" if the input is not an integer or is less than 0.
+
