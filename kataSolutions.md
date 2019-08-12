@@ -25,3 +25,4 @@ function palindrome(num) {
       return true;
     } else return false;
 }
+
