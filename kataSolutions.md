@@ -1,12 +1,12 @@
-Well of Ideas - Easy Version
+Sum of differences in array
 
-function DNAStrand(dna){
-  let r = '';
-  for(let i = 0; i < dna.length; i++){
-      if(dna[i] === 'A') r +='T';
-      if(dna[i] === 'T') r += 'A';
-      if(dna[i] === 'C') r += 'G';
-      if(dna[i] === 'G') r += 'C';
+
+function sumOfDifferences(arr) {
+  let sorted = arr.sort((a, b) => b - a);
+  //console.log.(sorted)
+  let sum = 0;
+    for(let i = 0; i < sorted.length - 1; i++){
+      sum = sum + (sorted[i] - sorted[i+1]);
     }
-    return r;
+    return sum;
 }
