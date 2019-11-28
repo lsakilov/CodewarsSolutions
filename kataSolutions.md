@@ -1,12 +1,9 @@
-Sum of differences in array
+Generate range of integers
 
-
-function sumOfDifferences(arr) {
-  let sorted = arr.sort((a, b) => b - a);
-  //console.log.(sorted)
-  let sum = 0;
-    for(let i = 0; i < sorted.length - 1; i++){
-      sum = sum + (sorted[i] - sorted[i+1]);
+function generateRange(min, max, step){
+  const arr = [];
+    for(let i = min; i <= max; i += step){
+      arr.push(i);
     }
-    return sum;
+    return arr;
 }
