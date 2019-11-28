@@ -1,8 +1,19 @@
-This code should store "codewa.rs" as a variable called name but it's not working. Can you figure out why?
-https://www.codewars.com/kata/basic-variable-assignment/train/javascript
+I love you, a little , a lot, passionately ... not at all
 
-var a = "code";
-var b = "wa.rs";
-var name = a + b;
+Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
 
-key string
+I love you
+a little
+a lot
+passionately
+madly
+not at all
+When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
+
+Your goal in this kata is to determine which phrase the girls would say for a flower of a given number of petals, where nb_petals > 0.
+
+function howMuchILoveYou(nbPetals) {
+  const fl = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all'];
+  return fl[(nbPetals-1) % fl.length]
+}
+
