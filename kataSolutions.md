@@ -1,9 +1,5 @@
-Generate range of integers
+Keep Hydrated!
 
-function generateRange(min, max, step){
-  const arr = [];
-    for(let i = min; i <= max; i += step){
-      arr.push(i);
-    }
-    return arr;
+function litres(time) {
+  return Math.floor(time * 0.5);
 }
