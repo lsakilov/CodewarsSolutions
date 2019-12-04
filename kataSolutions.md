@@ -1,12 +1,10 @@
-Keep Hydrated!
+The Wide-Mouthed frog!
 
-function litres(time) {
-  return Math.floor(time * 0.5);
+
+function mouthSize(animal) {
+  if(animal === 'alligator'){
+    return 'small';
+  } else {
+    return 'wide';
+  }
 }
-
-function litres(time) {
-  return Math.floor(time / 2);
-}
-
-
-123
