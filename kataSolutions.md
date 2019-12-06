@@ -8,3 +8,9 @@ function mouthSize(animal) {
     return 'wide';
   }
 }
+
+
+alt
+function mouthSize(animal) {
+ return (animal === 'alligator') ? 'small' : 'wide';
+
