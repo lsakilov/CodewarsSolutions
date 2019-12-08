@@ -1,8 +1,3 @@
-12345
-
-
-ReactJS
-
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Calculate Two People's Individual Ages
