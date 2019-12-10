@@ -1,23 +1,5 @@
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Alan Partridge II - Apple Turnover
-
-function apple(x){
-  return res = +(x ** 2 > 1000) ? "It\'s hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox.";
-}
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Calculate BMI
-
-function bmi(weight, height) {
-  return res = (weight / height ** 2) <= 18.5 ? "Underweight" : (weight / height ** 2) <= 25.0 ? "Normal" : (weight / height ** 2) <= 30.0 ? "Overweight" : "Obese";
-}
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-What's the real floor?
-
-function getRealFloor(n) {
-  return real = n <= 0 ? n : n > 12 ? n - 2 : n - 1;
-}
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Even or Odd
 
