@@ -1,26 +1,5 @@
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Even or Odd
-
-even_or_odd = number => return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
-
-function even_or_odd(number) {
-  return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
-}
-
-OR
-
-function even_or_odd(number) {
-  let msg;
-   if(number % 2 === 0){
-     msg = 'Even';
-   } else {
-     msg = 'Odd';
-    }
-   return msg;
-}
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Is he gonna survive?
 
 function hero(bullets, dragons){
