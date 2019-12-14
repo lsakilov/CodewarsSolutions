@@ -1,4 +1,11 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+For Twins: 2. Math operations
 
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  let brickSide = (radius*2)/(2**0.5);
+  let brickHeight = Math.round(bottleLength - rimLength);
+  return Math.round(brickHeight*brickSide*brickSide);
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Breaking chocolate problem
