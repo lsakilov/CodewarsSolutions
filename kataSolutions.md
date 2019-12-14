@@ -1,3 +1,19 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Breaking chocolate problem
+
+function breakChocolate(n,m) {
+  let cut = 0;
+  if(n === 0 || m === 0){
+    return 0;
+  } else {
+    return n*m-1;
+  }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 Training JS #1: create your first JS function and print "Helloworld!"
 
 function helloWorld(){
