@@ -1,3 +1,51 @@
+
+Number toString
+
+public class Kata
+{
+  public static string A = 123.ToString();
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The Wide-Mouthed frog!
+
+function mouthSize(animal) {
+  if(animal == 'alligator'){
+    return 'small';
+  } if(animal == 'ALLIGATOR') {
+    return 'small';
+  } else {
+    return 'wide';
+  }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Super Duper Easy
+
+function problem(x){
+  if(typeof x === 'string'){
+    return 'Error';
+  } else {
+    return x * 50 + 6;
+  }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Convert boolean values to strings 'Yes' or 'No'.
+
+function boolToWord( bool ){
+  if(bool === true){
+    return 'Yes';
+  } else {
+    return 'No';
+  }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Sum of angles
+
+function angle(n) {
+  return 180*(Math.round(n-2));
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 For Twins: 2. Math operations
 
