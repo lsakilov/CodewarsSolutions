@@ -1,5 +1,22 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+const closestMultiple10 = num => {
+  return (Math.round(num*0.1))*10;
+};
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Area of a Square
+
+function squareArea(A){
+  return Math.round((((A*4)/(2*Math.PI))**2)*100)/100;
+}
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Formatting decimal places #0
+
+function twoDecimalPlaces(n) {
+  return (Math.round(n * 100) / 100);
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Discover The Original Price
