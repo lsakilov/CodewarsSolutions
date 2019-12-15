@@ -1,5 +1,12 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+Count Odd Numbers below n
+
+function oddCount(n){
+  return Math.floor(n / 2);
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 const closestMultiple10 = num => {
   return (Math.round(num*0.1))*10;
 };
