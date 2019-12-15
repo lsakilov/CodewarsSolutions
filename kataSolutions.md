@@ -1,4 +1,19 @@
 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Discover The Original Price
+
+function discoverOriginalPrice(discountedPrice, salePercentage){
+  return Math.floor((discountedPrice /(100 - salePercentage)* 100)*100)/100;
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Sum The Strings
+
+function sumStr(a,b) {
+  return (Number(a)+Number(b))+ '';
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Number toString
 
 public class Kata
