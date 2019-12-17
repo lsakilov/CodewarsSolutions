@@ -5,6 +5,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Even or Odd
+even_or_odd = number => return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
 
 function even_or_odd(number) {
   return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
