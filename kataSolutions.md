@@ -1,4 +1,20 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Calculate Two People's Individual Ages
+
+function getAges(sum,difference){
+  const arr = [];
+  if(sum < 0 || difference < 0){
+    return null;
+    } else {
+        arr.push((sum/2) + (difference/2));
+        arr.push((sum/2) - (difference/2));
+    }
+  if(arr[0]<0 || arr[1]<0){
+    return null;
+  } else {
+  return arr;
+  }
+};
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Alan Partridge II - Apple Turnover
 
