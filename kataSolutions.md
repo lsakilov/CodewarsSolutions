@@ -1,4 +1,62 @@
 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Calculate Two People's Individual Ages
+
+function getAges(sum,difference){
+  const arr = [];
+  if(sum < 0 || difference < 0){
+    return null;
+    } else {
+        arr.push((sum/2) + (difference/2));
+        arr.push((sum/2) - (difference/2));
+    }
+  if(arr[0]<0 || arr[1]<0){
+    return null;
+  } else {
+  return arr;
+  }
+};
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Alan Partridge II - Apple Turnover
+
+function apple(x){
+  return res = +(x ** 2 > 1000) ? "It\'s hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox.";
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Calculate BMI
+
+function bmi(weight, height) {
+  return res = (weight / height ** 2) <= 18.5 ? "Underweight" : (weight / height ** 2) <= 25.0 ? "Normal" : (weight / height ** 2) <= 30.0 ? "Overweight" : "Obese";
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+What's the real floor?
+
+function getRealFloor(n) {
+  return real = n <= 0 ? n : n > 12 ? n - 2 : n - 1;
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Even or Odd
+
+even_or_odd = number => return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
+
+function even_or_odd(number) {
+  return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
+}
+
+OR
+
+function even_or_odd(number) {
+  let msg;
+   if(number % 2 === 0){
+     msg = 'Even';
+   } else {
+     msg = 'Odd';
+    }
+   return msg;
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Is he gonna survive?
 
