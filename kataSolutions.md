@@ -1,7 +1,13 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+Is n divisible by x and y?
 
+function isDivisible(n, x, y) {
+  return (n / x)%1 === 0 && (n / y)%1 === 0 ? true : false;
+}
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Calculate Two People's Individual Ages
 
 function getAges(sum,difference){
