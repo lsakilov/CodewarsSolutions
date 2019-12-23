@@ -16,7 +16,12 @@ function isDivideBy(number, a, b) {
 Rock Paper Scissors!
 
 const rps = (p1, p2) => {
-  return p1 === 'scissors' && p2 === 'paper' || p1 === 'rock' && p2 === 'scissors' || p1 === 'paper' && p2 === 'rock' ? 'Player 1 won!' : p1 === 'scissors' && p2 === 'rock' || p1 === 'paper' && p2 === 'scissors' || p1 === 'rock' && p2 === 'paper' ? 'Player 2 won!' : p1 === p2 ? 'Draw!' : false;
+  return p1 === 'scissors' && p2 === 'paper' || p1 === 'rock' && p2 === 'scissors' || p1 === 'paper' && p2 === 'rock' 
+  ? 'Player 1 won!' 
+  : p1 === 'scissors' && p2 === 'rock' || p1 === 'paper' && p2 === 'scissors' || p1 === 'rock' && p2 === 'paper' 
+  ? 'Player 2 won!' 
+  : p1 === p2 ? 'Draw!' 
+  : false;
 };
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
