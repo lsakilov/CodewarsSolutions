@@ -1,3 +1,18 @@
+Rock Paper Scissors!
+
+const rps = (p1, p2) => {
+  return p1 === 'scissors' && p2 === 'paper' || p1 === 'rock' && p2 === 'scissors' || p1 === 'paper' && p2 === 'rock' ? 'Player 1 won!' : p1 === 'scissors' && p2 === 'rock' || p1 === 'paper' && p2 === 'scissors' || p1 === 'rock' && p2 === 'paper' ? 'Player 2 won!' : p1 === p2 ? 'Draw!' : false;
+};
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Is this a triangle?
+
+function isTriangle(a,b,c)
+{
+   return a + b > c && b + c > a && a + c > b ? true : false;
+}
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Is n divisible by x and y?
