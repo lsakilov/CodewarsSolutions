@@ -1,7 +1,32 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+simple calculator
 
-
+function calculator(a, b, sign){
+  var res;
+  if(typeof(a)==='number' && typeof(b)==='number') {
+  switch(sign){
+    case '+':
+      res = a + b;
+      break;
+    case '-':
+      res = a - b;
+      break;
+    case '*':
+      res = a * b;
+      break;
+    case '/':
+      res = a / b;
+      break;
+    default:
+      res = 'unknown value';
+      break;
+  }
+    } else {
+    res = 'unknown value';
+    }
+  return res; 
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Basic Mathematical Operations
 
