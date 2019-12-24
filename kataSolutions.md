@@ -2,7 +2,18 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Training JS #7: if..else and ternary operator
+
+function saleHotdogs(n){
+  return n<5 ? n*100 : n>=5 && n<10 ? n*95 : n>10 ? n*90 : n*90;
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+101 Dalmatians - squash the bugs, not the dogs!
+
+function howManyDalmatians(number){
+  var dogs = ["Hardly any", "More than a handful!", "101 DALMATIANS!!!", "Woah that\'s a lot of dogs!"];
+  return res = number <= 10 ? dogs[0] : number <= 50 ? dogs[1] : number === 101 ? dogs[2] : dogs[3];
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Can we divide it?
