@@ -1,4 +1,21 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Difference Of Squares
+
+function differenceOfSquares(n){
+  let x = 1;
+  let sumSqr = 0;
+  while(x <= n){
+    sumSqr = sumSqr + (x ** 2);
+    x++;
+  }
+  let y = 1;
+  let sum = 0;
+  for(let y = 1; y <= n; y++){
+    sum = sum + y;
+  }
+  
+  return (sum ** 2) - sumSqr;
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 simple calculator
 
