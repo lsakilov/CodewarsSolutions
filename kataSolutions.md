@@ -1,4 +1,16 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Draw stairs
+
+function drawStairs(n){
+  let a = 'I';
+  let b = '\n';
+  let c = ' ';
+  let str = a;
+  for(let i = 1; i < n; i++){
+    str = str + b + c.repeat(i) + a;
+  }
+  return str;
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Sum of Multiples
 
