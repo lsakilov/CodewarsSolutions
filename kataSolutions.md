@@ -1,3 +1,18 @@
+Power
+function numberToPower(number, power){
+  var res = 1;
+  var count = 0;
+  if(power > 0){
+    do{
+      res = res * number;
+      count++;
+      console.log(res);
+    } while (count < power)
+  } else {
+    return 1;
+  }
+  return res;
+}
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Draw stairs
 
