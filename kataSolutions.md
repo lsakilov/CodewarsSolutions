@@ -4,6 +4,12 @@ var FilterString = function(value) {
 return parseInt(value.replace(/[a-z]/gi,''))
 }
 ```
+[isReallyNaN](https://www.codewars.com/kata/56c24c58e0c0f741d4001aef/javascript)
+```javascript
+const isReallyNaN = (val) => {
+  return Number.isNaN(val) ? true : false;
+};
+```
 for (let i = 1; i <= 10; i++) {     
   for (let j = 1; j <= 10; j++) {
     console.log(`${i} * ${j} = ${i * j}`);
