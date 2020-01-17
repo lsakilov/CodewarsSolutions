@@ -1,4 +1,9 @@
-
+[Filter the number](https://www.codewars.com/kata/55b051fac50a3292a9000025/javascript)
+```javascript
+var FilterString = function(value) {
+return parseInt(value.replace(/[a-z]/gi,''))
+}
+```
 for (let i = 1; i <= 10; i++) {     
   for (let j = 1; j <= 10; j++) {
     console.log(`${i} * ${j} = ${i * j}`);
