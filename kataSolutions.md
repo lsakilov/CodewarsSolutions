@@ -409,8 +409,8 @@ public class Kata
   public static string A = 123.ToString();
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-The Wide-Mouthed frog!
-
+[The Wide-Mouthed frog!](https://www.codewars.com/kata/57ec8bd8f670e9a47a000f89)
+```javascript
 function mouthSize(animal) {
   if(animal == 'alligator'){
     return 'small';
@@ -420,10 +420,11 @@ function mouthSize(animal) {
     return 'wide';
   }
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
 
-Super Duper Easy
 
+[Super Duper Easy](https://www.codewars.com/kata/55a5bfaa756cfede78000026)
+```javascript
 function problem(x){
   if(typeof x === 'string'){
     return 'Error';
@@ -431,10 +432,11 @@ function problem(x){
     return x * 50 + 6;
   }
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
 
-Convert boolean values to strings 'Yes' or 'No'.
 
+[Convert boolean values to strings 'Yes' or 'No'](https://www.codewars.com/kata/53369039d7ab3ac506000467)
+```javascript
 function boolToWord( bool ){
   if(bool === true){
     return 'Yes';
@@ -442,25 +444,29 @@ function boolToWord( bool ){
     return 'No';
   }
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
 
-Sum of angles
 
+[Sum of angles](https://www.codewars.com/kata/5a03b3f6a1c9040084001765)
+```javascript
 function angle(n) {
   return 180*(Math.round(n-2));
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-For Twins: 2. Math operations
+```
 
+
+[For Twins: 2. Math operations](https://www.codewars.com/kata/59c287b16bddd291c700009a)
+```javascript
 function iceBrickVolume(radius, bottleLength, rimLength) {
   let brickSide = (radius*2)/(2**0.5);
   let brickHeight = Math.round(bottleLength - rimLength);
   return Math.round(brickHeight*brickSide*brickSide);
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
 
-Breaking chocolate problem
 
+[Breaking chocolate problem](https://www.codewars.com/kata/534ea96ebb17181947000ada)
+```javascript
 function breakChocolate(n,m) {
   let cut = 0;
   if(n === 0 || m === 0){
@@ -469,30 +475,15 @@ function breakChocolate(n,m) {
     return n*m-1;
   }
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
 
 
-Training JS #1: create your first JS function and print "Helloworld!"
-
+[Training JS #1: create your first JS function and print "Helloworld!"](https://www.codewars.com/kata/training-js-number-1-create-your-first-js-function-and-print-helloworld/javascript)
+```javascript
 function helloWorld(){
 var str = "Hello World!";
 console.log(str);
 return str;
 }
 console.log(helloWorld());
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-package com.company;
-
-public class Main {
-
-    public static void main(String[] args) {
-	    int[][] array = {{1, 2, 3, 4, 5}, {6, 7, 8, 9}, {-1, -2, -3, -4}, {-5, 6}};
-	    int count = 0;
-	    for (int i = 0; i < array.length; i++) {
-	        count += array[i].length;
-        }
-	    System.out.println(count);
-    }
-}
+```
