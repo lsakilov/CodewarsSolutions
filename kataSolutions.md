@@ -382,13 +382,14 @@ function squareArea(A){
   return Math.round((((A*4)/(2*Math.PI))**2)*100)/100;
 }
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Formatting decimal places #0
 
+[Formatting decimal places #0](https://www.codewars.com/kata/5641a03210e973055a00000d)
+```javascript
 function twoDecimalPlaces(n) {
   return (Math.round(n * 100) / 100);
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
 
 [Discover The Original Price](https://www.codewars.com/kata/552564a82142d701f5001228)
 ```javascript
