@@ -375,12 +375,14 @@ const closestMultiple10 = num => {
   return (Math.round(num*0.1))*10;
 };
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Area of a Square
 
+
+[Area of a Square](https://www.codewars.com/kata/5748838ce2fab90b86001b1a)
+```javascript
 function squareArea(A){
   return Math.round((((A*4)/(2*Math.PI))**2)*100)/100;
 }
+```
 
 
 [Formatting decimal places #0](https://www.codewars.com/kata/5641a03210e973055a00000d)
