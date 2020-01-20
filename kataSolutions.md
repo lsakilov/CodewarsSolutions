@@ -390,25 +390,31 @@ function twoDecimalPlaces(n) {
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Discover The Original Price
-
+[Discover The Original Price](https://www.codewars.com/kata/552564a82142d701f5001228)
+```javascript
 function discoverOriginalPrice(discountedPrice, salePercentage){
   return Math.floor((discountedPrice /(100 - salePercentage)* 100)*100)/100;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Sum The Strings
+```
 
+
+[Sum The Strings](https://www.codewars.com/kata/5966e33c4e686b508700002d)
+```javascript
 function sumStr(a,b) {
   return (Number(a)+Number(b))+ '';
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Number toString
+```
 
+
+[Number toString](https://www.codewars.com/kata/53934feec44762736c00044b)
+```javascript
 public class Kata
 {
   public static string A = 123.ToString();
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 [The Wide-Mouthed frog!](https://www.codewars.com/kata/57ec8bd8f670e9a47a000f89)
 ```javascript
 function mouthSize(animal) {
