@@ -40,9 +40,9 @@ function numberToPower(number, power){
 }
 ```
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Draw stairs
 
+[Draw stairs](https://www.codewars.com/kata/5b4e779c578c6a898e0005c5)
+```javascript
 function drawStairs(n){
   let a = 'I';
   let b = '\n';
@@ -53,7 +53,9 @@ function drawStairs(n){
   }
   return str;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 Sum of Multiples
 
 function sumMul(n,m){
