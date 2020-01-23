@@ -271,8 +271,8 @@ function isDivisible(n, x, y) {
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Calculate Two People's Individual Ages
-
+[Calculate Two People's Individual Ages](https://www.codewars.com/kata/58e0bd6a79716b7fcf0013b1)
+```javascript
 function getAges(sum,difference){
   const arr = [];
   if(sum < 0 || difference < 0){
@@ -287,7 +287,9 @@ function getAges(sum,difference){
   return arr;
   }
 };
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 [Alan Partridge II - Apple Turnover](https://www.codewars.com/kata/580a094553bd9ec5d800007d)
 ```javascript
 function apple(x){
