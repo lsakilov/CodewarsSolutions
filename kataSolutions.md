@@ -10,6 +10,8 @@ const isReallyNaN = (val) => {
   return Number.isNaN(val) ? true : false;
 };
 ```
+
+```javascript
 for (let i = 1; i <= 10; i++) {     
   for (let j = 1; j <= 10; j++) {
     console.log(`${i} * ${j} = ${i * j}`);
@@ -17,8 +19,11 @@ for (let i = 1; i <= 10; i++) {
 
   console.log('--------------');  // строка, разделяющая столбцы таблицы умножения
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Power
+```
+
+
+[Power](https://www.codewars.com/kata/562926c855ca9fdc4800005b)
+```javascript
 function numberToPower(number, power){
   var res = 1;
   var count = 0;
@@ -33,6 +38,8 @@ function numberToPower(number, power){
   }
   return res;
 }
+```
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Draw stairs
 
