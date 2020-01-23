@@ -263,13 +263,13 @@ function isTriangle(a,b,c)
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Is n divisible by x and y?
-
+[Is n divisible by x and y?](https://www.codewars.com/kata/5545f109004975ea66000086)
+```javascript
 function isDivisible(n, x, y) {
   return (n / x)%1 === 0 && (n / y)%1 === 0 ? true : false;
 }
+```
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 [Calculate Two People's Individual Ages](https://www.codewars.com/kata/58e0bd6a79716b7fcf0013b1)
 ```javascript
