@@ -564,3 +564,15 @@ function makeNegative(num) {
   return -(Math.abs(num));
 }
 ```
+
+
+[Invert values](https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/javascript)
+```javascript
+function invert(array) {
+   newArray = [];
+     for(let i = 0; i < array.length; i++){
+       newArray.push(array[i] * -1);
+     };
+   return newArray;
+}
+```
