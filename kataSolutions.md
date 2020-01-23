@@ -345,12 +345,14 @@ function ifChuckSaysSo(){
   return 10 > 12;
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Keep up the hoop
-
+[Keep up the hoop](https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145)
+```javascript
 function hoopCount (n) {
    return msg = n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 [Be Concise I - The Ternary Operator](https://www.codewars.com/kata/56f3f6a82010832b02000f38)
 ```javascript
 let describeAge = age => "You're a(n) " + (age <13? "kid" : age < 18? "teenager" : age < 65?
