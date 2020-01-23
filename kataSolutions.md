@@ -357,12 +357,13 @@ let describeAge = age => "You're a(n) " + (age <13? "kid" : age < 18? "teenager"
     "adult" : "elderly");
     
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Century From Year
-
+[Century From Year](https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097)
+```javascript
 function century(year) {
   return Math.ceil(year/100);
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
 
 [Count Odd Numbers below n](https://www.codewars.com/kata/59342039eb450e39970000a6)
 ```javascript
