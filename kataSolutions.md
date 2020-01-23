@@ -254,14 +254,14 @@ const rps = (p1, p2) => {
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Is this a triangle?
-
+[Is this a triangle?](https://www.codewars.com/kata/56606694ec01347ce800001b)
+```javascript
 function isTriangle(a,b,c)
 {
    return a + b > c && b + c > a && a + c > b ? true : false;
 }
+```
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 [Is n divisible by x and y?](https://www.codewars.com/kata/5545f109004975ea66000086)
 ```javascript
