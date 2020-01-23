@@ -364,17 +364,18 @@ function century(year) {
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Count Odd Numbers below n
-
+[Count Odd Numbers below n](https://www.codewars.com/kata/59342039eb450e39970000a6)
+```javascript
 function oddCount(n){
   return Math.floor(n / 2);
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
 
+```javascript
 const closestMultiple10 = num => {
   return (Math.round(num*0.1))*10;
 };
-
+```
 
 
 [Area of a Square](https://www.codewars.com/kata/5748838ce2fab90b86001b1a)
