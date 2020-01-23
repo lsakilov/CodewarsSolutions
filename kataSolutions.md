@@ -339,12 +339,14 @@ function add(a, b){
 	return a == b ? true : false;
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Chuck Norris VII - True or False? (Beginner)
-
+[Chuck Norris VII - True or False? (Beginner)](https://www.codewars.com/kata/570669d8cb7293a2d1001473)
+```javascript
 function ifChuckSaysSo(){
   return 10 > 12;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 [Keep up the hoop](https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145)
 ```javascript
 function hoopCount (n) {
