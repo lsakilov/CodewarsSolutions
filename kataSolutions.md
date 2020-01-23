@@ -333,12 +333,14 @@ function hero(bullets, dragons){
   return (bullets / 2) >= dragons ? true : false;
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Simple Comparison?
-
+[Simple Comparison?](https://www.codewars.com/kata/57f6ecdfcca6e045d2001207)
+```javascript
 function add(a, b){
 	return a == b ? true : false;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 [Chuck Norris VII - True or False? (Beginner)](https://www.codewars.com/kata/570669d8cb7293a2d1001473)
 ```javascript
 function ifChuckSaysSo(){
