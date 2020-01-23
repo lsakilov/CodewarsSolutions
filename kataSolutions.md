@@ -351,12 +351,13 @@ function hoopCount (n) {
    return msg = n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Be Concise I - The Ternary Operator
-
+[Be Concise I - The Ternary Operator](https://www.codewars.com/kata/56f3f6a82010832b02000f38)
+```javascript
 let describeAge = age => "You're a(n) " + (age <13? "kid" : age < 18? "teenager" : age < 65?
     "adult" : "elderly");
-    
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 [Century From Year](https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097)
 ```javascript
 function century(year) {
