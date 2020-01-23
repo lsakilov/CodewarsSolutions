@@ -307,16 +307,16 @@ function getRealFloor(n) {
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Even or Odd
-
+[Even or Odd](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe)
+```javascript
 even_or_odd = number => return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
 
 function even_or_odd(number) {
   return msg = number % 2 === 0 ? msg = 'Even' : msg = 'Odd';
 }
+```
 
-OR
-
+```javascript
 function even_or_odd(number) {
   let msg;
    if(number % 2 === 0){
@@ -326,7 +326,9 @@ function even_or_odd(number) {
     }
    return msg;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
+
 [Is he gonna survive?](https://www.codewars.com/kata/59ca8246d751df55cc00014c)
 ```javascript
 function hero(bullets, dragons){
