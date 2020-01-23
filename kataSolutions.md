@@ -56,8 +56,8 @@ function drawStairs(n){
 ```
 
 
-Sum of Multiples
-
+[Sum of Multiples](https://www.codewars.com/kata/57241e0f440cd279b5000829)
+```javascript
 function sumMul(n,m){
   let sum = 0;
   if(n===m || m <= 0 || n <= 0){
@@ -71,9 +71,11 @@ function sumMul(n,m){
     return sum;
   }
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Beginner Series #3 Sum of Numbers
+```
 
+
+[Beginner Series #3 Sum of Numbers](https://www.codewars.com/kata/55f2b110f61eb01779000053)
+```javascript
 function getSum( a,b )
 {
    var sum = 0;
@@ -95,9 +97,11 @@ function getSum( a,b )
      return sum;
    }
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Sum of the first nth term of Series
+```
 
+
+[Sum of the first nth term of Series](https://www.codewars.com/kata/555eded1ad94b00403000071)
+```javascript
 function SeriesSum(n)
 {
   for(var x = 0, i = 0; i < n; i++){
@@ -105,9 +109,11 @@ function SeriesSum(n)
   }
   return x.toFixed(2);
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-The wheat/rice and chessboard problem
+```
 
+
+[The wheat/rice and chessboard problem](https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7)
+```javascript
 function squaresNeeded(grains){
   let count = 0;
   let i = 1;
@@ -117,9 +123,11 @@ function squaresNeeded(grains){
   }
   return count;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Powers of 3
+```
 
+
+[Powers of 3](https://www.codewars.com/kata/57be674b93687de78c0001d9)
+```javascript
 function largestPower(n){
   let k = 0;
   while(3**k<n){
@@ -127,9 +135,11 @@ function largestPower(n){
   }
   return k-1;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Factorial
+```
 
+
+[Factorial](https://www.codewars.com/kata/57a049e253ba33ac5e000212)
+```javascript
 function factorial(n){
   let res = 1;
   let i = 1;
@@ -139,28 +149,33 @@ function factorial(n){
   }
   return res;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-No zeros for heros
+```
 
+
+[No zeros for heros](https://www.codewars.com/kata/570a6a46455d08ff8d001002)
+```javascript
 function noBoringZeros(n) {
   while(n%10==0 && n!=0){
     n/=10;
   }
   return n;
 }
- 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Power of two
+```
 
+ 
+[Power of two](https://www.codewars.com/kata/534d0a229345375d520006a0)
+```javascript
 function isPowerOfTwo(n){
    while(n>=2){
      n = n/2;
    }
    return n === 1 ? true : false;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Difference Of Squares
+```
 
+
+[Difference Of Squares](https://www.codewars.com/kata/558f9f51e85b46e9fa000025)
+```javascript
 function differenceOfSquares(n){
   let x = 1;
   let sumSqr = 0;
@@ -176,9 +191,11 @@ function differenceOfSquares(n){
   
   return (sum ** 2) - sumSqr;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-simple calculator
+```
 
+
+[simple calculator](https://www.codewars.com/kata/5810085c533d69f4980001cf)
+```javascript
 function calculator(a, b, sign){
   var res;
   if(typeof(a)==='number' && typeof(b)==='number') {
@@ -204,9 +221,11 @@ function calculator(a, b, sign){
     }
   return res; 
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Basic Mathematical Operations
+```
 
+
+[Basic Mathematical Operations](https://www.codewars.com/kata/57356c55867b9b7a60000bd7)
+```javascript
 function basicOp(operation, value1, value2)
 {
   let res;
@@ -226,32 +245,36 @@ function basicOp(operation, value1, value2)
   }
   return res;
 }
+```
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Training JS #7: if..else and ternary operator
 
+[Training JS #7: if..else and ternary operator](https://www.codewars.com/kata/57202aefe8d6c514300001fd)
+```javascript
 function saleHotdogs(n){
   return n<5 ? n*100 : n>=5 && n<10 ? n*95 : n>10 ? n*90 : n*90;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-101 Dalmatians - squash the bugs, not the dogs!
+```
 
+
+[101 Dalmatians - squash the bugs, not the dogs!](https://www.codewars.com/kata/56f6919a6b88de18ff000b36)
+```javascript
 function howManyDalmatians(number){
   var dogs = ["Hardly any", "More than a handful!", "101 DALMATIANS!!!", "Woah that\'s a lot of dogs!"];
   return res = number <= 10 ? dogs[0] : number <= 50 ? dogs[1] : number === 101 ? dogs[2] : dogs[3];
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
 
-Can we divide it?
 
+[Can we divide it?](https://www.codewars.com/kata/5a2b703dc5e2845c0900005a)
+```javascript
 function isDivideBy(number, a, b) {
   return (number/a)%1===0 && (number/b)%1===0 ? true : false;
 }
+```
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Rock Paper Scissors!
-
+[Rock Paper Scissors!](https://www.codewars.com/kata/5672a98bdbdd995fad00000f)
+```javascript
 const rps = (p1, p2) => {
   return p1 === 'scissors' && p2 === 'paper' || p1 === 'rock' && p2 === 'scissors' || p1 === 'paper' && p2 === 'rock' 
   ? 'Player 1 won!' 
@@ -260,8 +283,8 @@ const rps = (p1, p2) => {
   : p1 === p2 ? 'Draw!' 
   : false;
 };
+```
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 [Is this a triangle?](https://www.codewars.com/kata/56606694ec01347ce800001b)
 ```javascript
