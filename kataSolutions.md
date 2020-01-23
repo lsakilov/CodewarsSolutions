@@ -556,3 +556,11 @@ function SafeInteger(n) {
   return Number.isSafeInteger(n);
 }
 ```
+
+
+[Return Negative](https://www.codewars.com/kata/55685cd7ad70877c23000102/javascript)
+```javascript
+function makeNegative(num) {
+  return -(Math.abs(num));
+}
+```
