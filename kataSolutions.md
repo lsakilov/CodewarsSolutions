@@ -294,18 +294,21 @@ function apple(x){
   return res = +(x ** 2 > 1000) ? "It\'s hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox.";
 }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Calculate BMI
-
+[Calculate BMI](https://www.codewars.com/kata/57a429e253ba3381850000fb)
+```javascript
 function bmi(weight, height) {
   return res = (weight / height ** 2) <= 18.5 ? "Underweight" : (weight / height ** 2) <= 25.0 ? "Normal" : (weight / height ** 2) <= 30.0 ? "Overweight" : "Obese";
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-What's the real floor?
+```
 
+
+[What's the real floor?](https://www.codewars.com/kata/574b3b1599d8f897470018f6)
+```javascript
 function getRealFloor(n) {
   return real = n <= 0 ? n : n > 12 ? n - 2 : n - 1;
 }
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+
 
 [Even or Odd](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe)
 ```javascript
