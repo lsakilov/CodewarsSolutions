@@ -591,3 +591,16 @@ function elevator(left, right, call){
   return Math.abs(right - call) <= Math.abs(left - call)  ? 'right' : 'left';
 }
 ```
+
+[Square Every Digit](https://www.codewars.com/kata/546e2562b03326a88e000020/javascript)
+```javascript
+function squareDigits(num){
+  let numString = num.toString()
+  let arr = []
+  
+  for(var i = 0; i < numString.length; i++) {
+    arr[i] = numString[i] * numString[i]
+  }
+  return Number(arr.join('')) 
+}
+```
