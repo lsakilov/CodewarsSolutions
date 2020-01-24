@@ -604,3 +604,20 @@ function squareDigits(num){
   return Number(arr.join('')) 
 }
 ```
+
+[Squares sequence](https://www.codewars.com/kata/5546180ca783b6d2d5000062/javascript)
+```javascript
+function squares(x, n) {
+  if(n<=0){
+    return [];
+  } else {
+      const arr = [x];
+      let y = x;
+      for(let i = 1; i < n; i++){
+        y = Math.pow(y, 2);
+      arr.push(y);
+    }
+    return arr;
+  }
+}
+```
