@@ -645,3 +645,14 @@ function isSquare(n){
   return Math.sqrt(n)%1 === 0;
 }
 ```
+
+[Find the next perfect square!](https://www.codewars.com/kata/56269eb78ad2e4ced1000013/javascript)
+```javascript
+function findNextSquare(sq) {
+  var sqRt = Math.sqrt( sq );
+  if ( NaN === sqRt || sqRt !== parseInt( sqRt, 10 ) ) {
+    return -1;
+  }
+  return Math.pow( sqRt + 1, 2 );
+}
+```
