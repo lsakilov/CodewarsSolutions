@@ -656,3 +656,4 @@ function findNextSquare(sq) {
   return Math.pow( sqRt + 1, 2 );
 }
 ```
+
