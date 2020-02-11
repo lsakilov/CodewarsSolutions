@@ -677,3 +677,12 @@ function dutyFree(normPrice, discount, hol){
   return Math.floor(hol/discountNum);
 }
 ```
+
+[All Star Code Challenge #22](https://www.codewars.com/kata/5865cff66b5699883f0001aa/javascript)
+```javascript
+function toTime(seconds) {
+  let convertToHoures = Math.floor(seconds/3600);
+  let convertToMinutes = Math.floor((seconds/60)%60);
+  return (convertToHoures + ' hour(s) and ' + convertToMinutes + ' minute(s)');
+}
+```
