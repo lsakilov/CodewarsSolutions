@@ -669,3 +669,11 @@ function mango(quantity, price){
   return (quantity-Math.floor(quantity/3))*price;
 }
 ```
+
+[Holiday VIII - Duty Free](https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/javascript)
+```javascript
+function dutyFree(normPrice, discount, hol){
+  let discountNum = (normPrice/100)*discount;
+  return Math.floor(hol/discountNum);
+}
+```
