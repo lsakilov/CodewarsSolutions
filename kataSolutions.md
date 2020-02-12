@@ -686,3 +686,10 @@ function toTime(seconds) {
   return (convertToHoures + ' hour(s) and ' + convertToMinutes + ' minute(s)');
 }
 ```
+
+[How many times should I go?](https://www.codewars.com/kata/57efcb78e77282f4790003d8/javascript)
+```javascript
+function howManyTimes(annualPrice, individualPrice) {
+  return Math.ceil(annualPrice/individualPrice);
+}
+```
