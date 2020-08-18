@@ -693,3 +693,15 @@ function howManyTimes(annualPrice, individualPrice) {
   return Math.ceil(annualPrice/individualPrice);
 }
 ```
+
+[Hello, Name or World!](https://www.codewars.com/kata/57e3f79c9cb119374600046b/train/javascript)
+```javascript
+function hello(name) {
+  if(name === '' || name === undefined){
+    return 'Hello, World!';
+  } else {
+    let nameAdjusted = name.toLowerCase();
+      return 'Hello, ' + nameAdjusted[0].toUpperCase() + nameAdjusted.slice(1) + '!';
+    }
+}
+```
