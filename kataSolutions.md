@@ -720,7 +720,7 @@ function sayHello(name) {
 }
 ```
 
-[]()tt
+[]()t
 ```javascript
 
 ```
