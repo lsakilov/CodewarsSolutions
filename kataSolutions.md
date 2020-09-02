@@ -722,8 +722,4 @@ function sayHello(name) {
 
 []()t
 ```javascript
-const a = null;
-const b = undefined;
-const isStrictEqual = a === b;
-const isEqual = a == b;
-console.log(isEqual);```
+```
