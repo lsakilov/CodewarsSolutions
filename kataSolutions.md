@@ -731,5 +731,4 @@ function evensAndOdds(num){
 ```javascript
 
 
-
 ```
