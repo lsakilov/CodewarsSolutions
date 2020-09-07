@@ -718,7 +718,9 @@ function main (verb, noun){
 function sayHello(name) {
   return 'Hello, ' + name;
 }
-```[Grasshopper - Debug sayHello](https://www.codewars.com/kata/5625618b1fe21ab49f00001f/train/javascript)
+```
+
+[Grasshopper - Debug sayHello](https://www.codewars.com/kata/5625618b1fe21ab49f00001f/train/javascript)
 ```javascript
 function sayHello(name) {
   return 'Hello, ' + name;
