@@ -720,12 +720,6 @@ function sayHello(name) {
 }
 ```
 
-[Grasshopper - Debug sayHello](https://www.codewars.com/kata/5625618b1fe21ab49f00001f/train/javascript)
-```javascript
-function sayHello(name) {
-  return 'Hello, ' + name;
-}
-```
 
 [Evens and Odds](https://www.codewars.com/kata/583ade15666df5a64e000058/train/javascript)t
 ```javascript
