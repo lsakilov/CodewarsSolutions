@@ -728,5 +728,7 @@ function evensAndOdds(num){
 ```
 
 ```javascript
-
+function solution (num){
+    return num
+}
 ```
