@@ -729,6 +729,6 @@ function evensAndOdds(num){
 
 ```javascript
 function solution (num){
-    return num
+    return num > 0
 }
 ```
