@@ -727,6 +727,7 @@ function evensAndOdds(num){
 }
 ```
 
+
 ```javascript
 function solution (num){
     return num > 0 ? true : false;
