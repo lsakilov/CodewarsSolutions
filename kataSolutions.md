@@ -727,6 +727,3 @@ function evensAndOdds(num){
 }
 ```
 
-```javascript
-
-```
