@@ -729,4 +729,3 @@ function evensAndOdds(num){
 
 
 
-
