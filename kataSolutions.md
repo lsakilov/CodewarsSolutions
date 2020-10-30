@@ -731,6 +731,5 @@ function evensAndOdds(num){
 []()
 function(){
     return
-    
 }
 ```
