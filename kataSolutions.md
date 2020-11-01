@@ -728,7 +728,7 @@ function evensAndOdds(num){
 ```
 
 ```javascript
-[]()
+[Evens and Odds]()
 function(){
     return
 }
