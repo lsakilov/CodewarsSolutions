@@ -728,7 +728,7 @@ function evensAndOdds(num){
 ```
 
 ```javascript
-[Evens and Odds]()
+[Evens and Odds](https://www.codewars.com/kata/583ade15666df5a64e000058/train/javascript)
 function(){
     return
 }
