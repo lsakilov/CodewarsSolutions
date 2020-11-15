@@ -495,7 +495,6 @@ function problem(x){
 }
 ```
 
-
 [Convert boolean values to strings 'Yes' or 'No'](https://www.codewars.com/kata/53369039d7ab3ac506000467)
 ```javascript
 function boolToWord( bool ){
@@ -507,14 +506,12 @@ function boolToWord( bool ){
 }
 ```
 
-
 [Sum of angles](https://www.codewars.com/kata/5a03b3f6a1c9040084001765)
 ```javascript
 function angle(n) {
   return 180*(Math.round(n-2));
 }
 ```
-
 
 [For Twins: 2. Math operations](https://www.codewars.com/kata/59c287b16bddd291c700009a)
 ```javascript
@@ -720,16 +717,24 @@ function sayHello(name) {
 }
 ```
 
-[Evens and Odds](https://www.codewars.com/kata/583ade15666df5a64e000058/train/javascript)t
+[Evens and Odds](https://www.codewars.com/kata/583ade15666df5a64e000058/train/javascript)
 ```javascript
 function evensAndOdds(num){
     return num % 2 === 0 ? (num).toString(2) : (num).toString(16);
 }
 ```
 
-[Reversed Words] (https://www.codewars.com/kata/51c8991dee245d7ddf00000e/train/javascript)
+[Reversed Words](https://www.codewars.com/kata/51c8991dee245d7ddf00000e/train/javascript)
 ```javascript
 function reverseWords(str){
     return str.split(/\s/).reverse().join(" "); // reverse those words
+}
+```
+
+[Gravity Flip](https://www.codewars.com/kata/5f70c883e10f9e0001c89673/train/javascript)
+```javascript
+let flip = (d, a) => {
+  let arr = [];
+      return d === 'R' ? a.sort(): a.sort().reverse();
 }
 ```
