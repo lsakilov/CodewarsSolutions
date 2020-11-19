@@ -789,3 +789,16 @@ function arrayPlusArray(arr1, arr2) {
   return (arr1.reduce((a,b) => a + b, 0)) + (arr2.reduce((a,b) => a + b, 0));
 }
 ```
+
+
+[Filling an array (part 1)](https://www.codewars.com/kata/571d42206414b103dc0006a1/train/javascript)
+```javascript
+function arr(N) {
+  let newArr = [];
+  for(let i = 0; i <= N-1; i++){
+    newArr.push(i);
+  }
+  console.log(newArr);
+  return newArr;
+}
+```
