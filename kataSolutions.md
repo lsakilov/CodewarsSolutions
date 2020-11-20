@@ -801,3 +801,14 @@ function arr(N) {
   return newArr;
 }
 ```
+
+[N-th Power](https://www.codewars.com/kata/57d814e4950d8489720008db/train/javascript)
+```javascript
+function index(array, n){
+  if(n >= array.length){
+    return -1;
+  } else {
+    return array[n] ** n;
+  }
+}
+```
